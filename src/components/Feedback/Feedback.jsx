@@ -1,6 +1,6 @@
 import React from "react";
 
-const Feedback = ({ feedback }) => {
+const Feedback = ({ feedback, totalFeedback, positiveFeedback }) => {
   const { good, neutral, bad } = feedback;
 
   return (
@@ -9,8 +9,8 @@ const Feedback = ({ feedback }) => {
         <li>Good: {good}</li>
         <li>Neutral: {neutral}</li>
         <li>Bad: {bad}</li>
-        <li>Total:</li>
-        <li>Positive:</li>
+        <li>Total:{totalFeedback}</li>
+        <li>Positive:{positiveFeedback}%</li>
       </ul>
     </div>
   );
